@@ -1,6 +1,6 @@
 ﻿#include <iostream>
-#include <cstdlib>
-#include <ctime>
+#include <cstdlib> //random(max)함수 적용
+#include <ctime> //time함수 적용
 int main()
 {
 	using namespace std;
