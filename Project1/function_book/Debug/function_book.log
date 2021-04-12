@@ -1,2 +1,3 @@
 ﻿  function_book.cpp
+C:\Users\sc080\OneDrive\바탕 화면\2학년\프로그램\Quiz\Quiz\Debug\Quiz.tlog\Gack_chae_ji_hang_program\Project1\function_book\function_book.cpp(163,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
   function_book.vcxproj -> C:\Users\sc080\OneDrive\바탕 화면\2학년\프로그램\Quiz\Quiz\Debug\Quiz.tlog\Gack_chae_ji_hang_program\Project1\Debug\function_book.exe
