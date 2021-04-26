@@ -18,5 +18,8 @@
     <ClCompile Include="function_Lab5.4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="struct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
