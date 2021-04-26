@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "struct_Eg._6.3", "struct_Eg
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "struct_Eg.6.5", "struct_Eg.6.5\struct_Eg.6.5.vcxproj", "{D54897A4-C345-49AC-9400-F95FEC1A0414}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "struct_book", "struct_book\struct_book.vcxproj", "{74A78245-57DA-489B-9404-50B71F264899}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{D54897A4-C345-49AC-9400-F95FEC1A0414}.Release|x64.Build.0 = Release|x64
 		{D54897A4-C345-49AC-9400-F95FEC1A0414}.Release|x86.ActiveCfg = Release|Win32
 		{D54897A4-C345-49AC-9400-F95FEC1A0414}.Release|x86.Build.0 = Release|Win32
+		{74A78245-57DA-489B-9404-50B71F264899}.Debug|x64.ActiveCfg = Debug|x64
+		{74A78245-57DA-489B-9404-50B71F264899}.Debug|x64.Build.0 = Debug|x64
+		{74A78245-57DA-489B-9404-50B71F264899}.Debug|x86.ActiveCfg = Debug|Win32
+		{74A78245-57DA-489B-9404-50B71F264899}.Debug|x86.Build.0 = Debug|Win32
+		{74A78245-57DA-489B-9404-50B71F264899}.Release|x64.ActiveCfg = Release|x64
+		{74A78245-57DA-489B-9404-50B71F264899}.Release|x64.Build.0 = Release|x64
+		{74A78245-57DA-489B-9404-50B71F264899}.Release|x86.ActiveCfg = Release|Win32
+		{74A78245-57DA-489B-9404-50B71F264899}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
