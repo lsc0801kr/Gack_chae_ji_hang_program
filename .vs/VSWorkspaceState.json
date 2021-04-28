@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Project1",
+    "\\Project1\\struct",
+    "\\Project1\\struct\\struct\\struct_Eg.6.5"
   ],
+  "SelectedNode": "\\Project1\\function.sln",
   "PreviewInSolutionExplorer": false
 }
