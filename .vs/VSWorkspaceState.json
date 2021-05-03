@@ -2,9 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\Project1",
-    "\\Project1\\struct",
+    "\\Project1\\class",
+    "\\Project1\\class\\class",
+    "\\Project1\\struct\\struct",
     "\\Project1\\struct\\struct\\struct_Eg.6.5"
   ],
-  "SelectedNode": "\\Project1\\function.sln",
+  "SelectedNode": "\\Project1\\class\\class\\class_one.cpp",
   "PreviewInSolutionExplorer": false
 }
