@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\class"
+    "\\class",
+    "\\class_8.6",
+    "\\class_8.7.1"
   ],
-  "SelectedNode": "\\class\\Debug",
+  "SelectedNode": "\\class\\class_one.cpp",
   "PreviewInSolutionExplorer": false
 }
