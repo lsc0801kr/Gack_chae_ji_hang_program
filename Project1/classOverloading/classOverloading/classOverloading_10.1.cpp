@@ -19,6 +19,7 @@ void Complex::ShowComplex()
 		cout << "(" << real << " + " << image << "i)" << endl;
 	else if (image < 0)
 		cout << "(" << real << image << "i)" << endl;
+	else
 	cout << real << endl;
 }
 Complex::Complex(int r, int i)
@@ -31,14 +32,14 @@ Complex Complex::Sum(Complex lvalue/*x부분*/, Complex rvalue/*y부분*/)
 //x와 y를 모두 받는다.
 {
 	Complex res;
-	res.real = lvalue.real + rvalue.real;
-	res.image = lvalue.image + rvalue.image;
+	res.real = lvalue.real + rvalue.real;   //res.real=x의 첫번째 값 + y의 첫번째 값
+	res.image = lvalue.image + rvalue.image;//res.image=x의 두번째 값 + y의 두번째 값
 	return res;
 }
 
 int main()
 {
-	Complex x(3, 4), y(3, 4);
+	Complex x(3, 4), y(1, 2);
 	Complex z;
 	z = x.Sum(x, y);
 	x.ShowComplex();
