@@ -28,7 +28,7 @@ Geoinfo::Geoinfo(const char* ch, int a, int b)
 	age = b;
 }
 
-Geoinfo::Geoinfo(const Geoinfo& p) //별칭
+Geoinfo::Geoinfo(const Geoinfo& p) //y객체의 별칭
 {
 	strcpy_s(name, 20, p.name); //? 왜 p.name이지?
 	id = p.id;
@@ -44,9 +44,10 @@ void Geoinfo::Showinfo()
 
 int main()
 {
-	Geoinfo x;
+	Geoinfo x; //인자가 없음
 	Geoinfo y("geo", 20000, 20);
 	Geoinfo z(y); //Geoinfo z=y
+	//y가 가지고 있는 멤머변수의 내용이 카피되어져서 복사 생성자라고 한다.
 	x.Showinfo();
 	y.Showinfo();
 	z.Showinfo();
