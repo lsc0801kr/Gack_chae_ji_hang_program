@@ -9,13 +9,12 @@ public:
 	Cal(int new_A, int new_B);
 	void Prn();
 };
-
-Cal::Cal()
+Cal::Cal() //매개변수가 없는 생성자
 {
 	a = 0;
 	b = 0;
 }
-Cal::Cal(int new_A, int new_B)
+Cal::Cal(int new_A, int new_B) //매개변수가 있는 생성자
 {
 	a = new_A;
 	b = new_B;
@@ -31,8 +30,8 @@ public:
 	Add();
 	Add(int new_A, int new_B);
 	void Sum();
-	void Prn();
-}; //오버라이딩
+	void Prn(); //오버라이딩
+};
 Add::Add():Cal()
 {
 }
@@ -44,16 +43,16 @@ void Add::Sum()
 {
 	c = a + b;
 }
-void Add::Prn()
+void Add::Prn() //오버라이딩
 {
 	cout << a << " + " << b << " = " << c << endl;
 }
 int main()
 {
 	Cal* Calptr;
-	Calptr = new Add(1, 2);
+	Calptr = new Add(1, 2); //Cal 안에있는 Add중 매개변수가 있는 것을 가리킴
 	//기초 class형 포인터 변수가 파생 class형 객체를 가리킴
-	Calptr->Prn();
+	Calptr->Prn(); //Cal안에 있는 Prn을 호출한다.(기초 class의 함수를 호출)
 	//기초 class의 함수 호출? 파생 class의 함수호출?
 	return 0;
 }

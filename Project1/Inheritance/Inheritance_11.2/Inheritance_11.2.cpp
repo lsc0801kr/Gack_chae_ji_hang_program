@@ -3,8 +3,8 @@ using namespace std;
 
 class Base {
 public:
-	Base();
-	~Base();
+	Base(); //持失切
+	~Base(); //社瑚切
 };
 Base::Base()
 {
@@ -14,7 +14,7 @@ Base::~Base()
 {
 	cout << "B. calling a dectructor of the Base calss " << endl;
 }
-class Derived :public Base {
+class Derived :public Base{
 public:
 	Derived();
 	~Derived();

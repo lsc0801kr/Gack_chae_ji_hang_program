@@ -39,7 +39,7 @@ void Add::Sum()
 	c = a + b;
 }
 Add::Add(int new_A, int new_B)
-//생성자를 2번 정의함 !!!여기랑
+//생성자를 2번 정의함 !!!여기
 {
 	a = new_A;
 	b = new_B;
