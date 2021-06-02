@@ -7,7 +7,10 @@ protected:
 public:
 	Cal();
 	Cal(int new_A, int new_B);
-	void Prn();
+	//void Prn(); //-> 기초 class타입에 들어감
+	virtual void Prn(); //-> new라는 키워드랑 함께 add로 가고
+	//객체의 주소가 저장되는 시점은 실행시점
+	//실행시점의 함수로 불러가기 때문에 상속받은 부분으로 간다.
 };
 Cal::Cal() //매개변수가 없는 생성자
 {
@@ -21,6 +24,7 @@ Cal::Cal(int new_A, int new_B) //매개변수가 있는 생성자
 }
 void Cal::Prn()
 {
+	cout << "Cal::Prn" << endl;
 	cout << a<<"\t" <<b <<endl;
 }
 class Add :public Cal {
@@ -45,6 +49,7 @@ void Add::Sum()
 }
 void Add::Prn() //오버라이딩
 {
+	cout << "Add::Prn" << endl;
 	cout << a << " + " << b << " = " << c << endl;
 }
 int main()
