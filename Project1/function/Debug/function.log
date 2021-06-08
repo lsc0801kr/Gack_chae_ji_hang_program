@@ -1,0 +1,2 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(519,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (function.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  function.vcxproj -> C:\Users\sc080\OneDrive\바탕 화면\2학년\프로그램\Quiz\Quiz\Debug\Quiz.tlog\Gack_chae_ji_hang_program\Project1\Debug\function_Eg5.1.exe
