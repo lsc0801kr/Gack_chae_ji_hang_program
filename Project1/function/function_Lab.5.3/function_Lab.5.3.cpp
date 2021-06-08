@@ -41,26 +41,26 @@
 //	return sum;
 //}
 
-//#include <iostream>
-//using namespace std;
-//int addq(int arr[], int size);
-//int main()
-//{
-//	int arr[5];
-//	for (int i = 0; i < size(arr); i++)
-//	{
-//		cout << "Input " << i + 1 << "st number : ";
-//		cin >> arr[i];
-//	}
-//	cout << "Total number is : " << addq(arr, 5) << endl;
-//	return 0;
-//}
-//int addq(int arr[], int size)
-//{
-//	int sum = 0;
-//	for (int j = 0; j < size; j++)
-//	{
-//		sum += arr[j];
-//	}
-//	return sum;
-//}
+#include <iostream>
+using namespace std;
+int addq(int arr[], int size);
+int main()
+{
+	int arr[5];
+	for (int i = 0; i < size(arr); i++)
+	{
+		cout << "Input " << i + 1 << "st number : ";
+		cin >> arr[i];
+	}
+	cout << "Total number is : " << addq(arr, 5) << endl;
+	return 0;
+}
+int addq(int arr[], int size)
+{
+	int sum = 0;
+	for (int j = 0; j < size; j++)
+	{
+		sum += arr[j];
+	}
+	return sum;
+}

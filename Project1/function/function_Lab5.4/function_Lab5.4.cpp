@@ -73,6 +73,8 @@ int main()
 {
 	int arr[2][3];
 	int size = sizeof(arr) / sizeof(int);
+	cout << "sizeof(arr)" << sizeof(arr) << endl;
+	cout << "sizeof(int)" << sizeof(int) << endl;
 	for (int i = 0; i < 2; i++)
 	{
 		for (int j = 0; j < 3; j++)

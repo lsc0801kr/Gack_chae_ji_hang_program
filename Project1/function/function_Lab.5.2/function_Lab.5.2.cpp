@@ -1,5 +1,5 @@
 #include <iostream>
-void swap(int *a, int *b);
+void swap(int *pa, int *pb);
 using namespace std;
 
 int main()
@@ -7,7 +7,7 @@ int main()
 	int a = 10, b = 20;
 	cout << "before call: a = " << a << " b = " << b << endl;
 	
-	swap(&a, &b);
+	void swap(&a, &b);
 
 	cout << "after call: a = " << a << " b = " << b << endl;
 	return 0;
