@@ -880,34 +880,441 @@ using namespace std;
 //	return 0;
 //}
 
-#include <iostream>
-using namespace std;
-int add(int(*output)[3], int size)
-{
-	int sum = 0;
-	for (int i = 0; i < 2; i++)
-	{
-		for (int j = 0; j < 3; j++)
-			sum += output[i][j];
-	}
-	return sum;
-}
-int main()
-{
-	int arr[2][3];
-	int size = sizeof(arr) / sizeof(int);
-	cout << "sizeof(arr)" << sizeof(arr) << endl;
-	cout << "sizeof(int)" << sizeof(int) << endl;
-	for (int i = 0; i < 2; i++)
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			cin >> arr[i][j];
-		}
-		cout << endl;
-	}
-	int total = 0;
-	total = add(arr, size);
-	cout << total << endl;
-	return 0;
-}
+//#include <iostream>
+//using namespace std;
+//int add(int(*output)[3], int size)
+//{
+//	int sum = 0;
+//	for (int i = 0; i < 2; i++)
+//	{
+//		for (int j = 0; j < 3; j++)
+//			sum += output[i][j];
+//	}
+//	return sum;
+//}
+//int main()
+//{
+//	int arr[2][3];
+//	int size = sizeof(arr) / sizeof(int);
+//	cout << "sizeof(arr)" << sizeof(arr) << endl;
+//	cout << "sizeof(int)" << sizeof(int) << endl;
+//	for (int i = 0; i < 2; i++)
+//	{
+//		for (int j = 0; j < 3; j++)
+//		{
+//			cin >> arr[i][j];
+//		}
+//		cout << endl;
+//	}
+//	int total = 0;
+//	total = add(arr, size);
+//	cout << total << endl;
+//	return 0;
+//}
+//===========================================================================================
+
+//#include <iostream>
+//using namespace std;
+//class Time {
+//private:
+//	int hour;
+//	int minute;
+//	int second;
+//public:
+//	Time(int h = 0, int m = 0, int s = 0);
+//	void ShowTime();
+//	void ShowTimeinSec();
+//};
+//Time::Time(int h, int m, int s)
+//{
+//	hour = h;
+//	minute = m;
+//	second = s;
+//}
+//void Time::ShowTime()
+//{
+//	cout << hour << "시 " << minute << "분 " << second << "초" << endl;
+//}
+//void Time::ShowTimeinSec()
+//{
+//	int realhour = hour * 3600;
+//	int realminute = minute * 60;
+//	cout << realhour + realminute + second << "초" << endl;
+//}
+//int main()
+//{
+//	Time time1(9);
+//	Time time2(9, 10);
+//	Time time3(9, 10, 11);
+//
+//	time2.ShowTime();
+//	time2.ShowTimeinSec();
+//
+//	return 0;
+//}
+
+
+//#include <iostream>
+//using namespace std;
+//
+//class Rectangle
+//{
+//private:
+//	int a, b;
+//	double length = 0;
+//	double wide = 0;
+//public:
+//	Rectangle(int i = 0, int j = 0);
+//	double GetArea();
+//	double GetGirth();
+//};
+//
+//Rectangle::Rectangle(int i, int j)
+//{
+//	a = i;
+//	b = j;
+//}
+//
+//double Rectangle::GetArea()
+//{
+//	length = 2 * (a + b);
+//	return length;
+//}
+//
+//double Rectangle::GetGirth()
+//{
+//	wide = a * b;
+//	return wide;
+//}
+//
+//class Circle
+//{
+//private:
+//	int a;
+//	double area = 0;
+//	double girth = 0;
+//public:
+//	Circle(int i = 0);
+//	double GetArea();
+//	double GetGirth();
+//};
+//
+//Circle::Circle(int i)
+//{
+//	a = i;
+//}
+//
+//double Circle::GetArea()
+//{
+//	area = a * a * 3.141592;
+//	return area;
+//}
+//
+//double Circle::GetGirth()
+//{
+//	girth = a * 2 * 3.141592;
+//	return girth;
+//}
+//
+//int main()
+//{
+//	Rectangle rec(3, 4);
+//	cout << "Area: " << rec.GetArea() << endl;
+//	cout << "Girth: " << rec.GetGirth() << endl;
+//
+//	Circle cir(5);
+//	cout << "Area: " << cir.GetArea() << endl;
+//	cout << "Girth: " << cir.GetGirth() << endl;
+//	return 0;
+//}
+
+//#include <iostream>
+//int main()
+//{
+//	using namespace std;
+//	int num, numOrigin;
+//	int count = 0;
+//	cout << "Enter any integer number: ";
+//	cin >> num;
+//	while (num < 100) {
+//		//3자리 이상 정수 조건식 설정
+//		cout << "Enter any integer number: ";
+//		cin >> num;
+//	}
+//	numOrigin = num; //num값 저장
+//	for (int i = 0; i <= 9; i++) {
+//		//각 숫자 반복문 설정
+//		while (num != 0) {
+//			//각 자리수 갯수 구하기
+//			if (num % 10 == i) {
+//				count = count + 1;
+//			}
+//			num = num / 10;
+//		}
+//		cout << i << " : " << count << " times" << endl;
+//		count = 0;
+//		//각 숫자 반복 횟수 값 초기화
+//		num = numOrigin;
+//		//num값 초기화
+//	}
+//	return 0;
+//}
+
+//#include <iostream>
+//#include <cstdlib>
+//using namespace std;
+//
+//class Random
+//{
+//private:
+//	int ranNum[10];
+//public:
+//	Random();
+//	Random(int fromNum, int toNum);
+//	void ShowNumbers();
+//	void ShowMinNumber();
+//	void ShowMaxNumber();
+//	void FindMostFreqNumber();
+//};
+//
+//Random::Random()
+//{
+//	srand(time(NULL));
+//	for (int z = 0; z < 10; z++)
+//	{
+//		ranNum[z] = (rand() % 10 + 1);
+//	}
+//}
+//
+//Random::Random(int fromNum, int toNum)
+//{
+//	//srand(time(NULL));
+//	for (int z = 0; z < 10; z++)
+//	{
+//		ranNum[z] = (rand() % (toNum + 1 - fromNum) + fromNum); //40부터 45까지의 난수
+//	}
+//}
+//
+//void Random::ShowNumbers()
+//{
+//	cout << "Random numbers are as follows: ";
+//	for (int i = 0; i < 10; i++)
+//	{
+//		cout << " " << ranNum[i];
+//	}
+//	cout << endl;
+//}
+//
+//void Random::ShowMinNumber()
+//{
+//	cout << "Minimum number : ";
+//	int num = ranNum[0];
+//	for (int i = 0; i < 10; i++)
+//	{
+//		if (ranNum[i] <= num)
+//		{
+//			num = ranNum[i];
+//		}
+//	}
+//	cout << num << endl;
+//}
+//
+//void Random::ShowMaxNumber()
+//{
+//	cout << "Maximum number : ";
+//	int num = ranNum[0];
+//	for (int i = 0; i < 10; i++)
+//	{
+//		if (ranNum[i] >= num)
+//		{
+//			num = ranNum[i];
+//		}
+//	}
+//	cout << num << endl;
+//}
+//
+//void Random::FindMostFreqNumber()
+//{
+//	int max_count = 0;
+//	cout << " Most occurred number: ";
+//	for (int i = 0; i < 10; i++)
+//	{
+//		int count = 1;
+//		for (int j = i + 1; j < 10; j++)
+//			if (ranNum[i] == ranNum[j])
+//				count++;
+//		if (count > max_count)
+//			max_count = count;
+//	}
+//	for (int i = 0; i < 10; i++)
+//	{
+//		int count = 1;
+//		for (int j = i + 1; j < 10; j++)
+//			if (ranNum[i] == ranNum[j])
+//				count++;
+//		if (count == max_count)
+//			cout << ranNum[i] << " ";
+//	}
+//	cout << endl;
+//}
+//
+//int main()
+//{
+//	Random a;
+//	a.ShowNumbers();
+//	a.ShowMinNumber();
+//	a.ShowMaxNumber();
+//	a.FindMostFreqNumber();
+//
+//	Random b(40, 45);
+//	b.ShowNumbers();
+//	b.ShowMinNumber();
+//	b.ShowMaxNumber();
+//	b.FindMostFreqNumber();
+//
+//	return 0;
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//========================================================
+//#include <iostream>
+//using namespace std;
+//
+//int prnMaxNum(int *a, int b)
+//{
+//	int max = 0;
+//	for (int i = 0; i < 10; i++)
+//	{
+//		if (a[i] > max)
+//			max = a[i];
+//	}
+//	cout << "The maximum number is ";
+//	cout << max << endl;
+//	return max;
+//}
+//
+//int countOddNumber(int *i, int j)
+//{
+//	int count = 0;
+//	for (int z = 0; z < 10; z++)
+//	{
+//		if (i[z] % 2 == 0)
+//			count = count + 1;
+//	}
+//	return count;
+//}
+//
+//int main()
+//{
+//	int num[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int size = sizeof(num) / sizeof(int);
+//	prnMaxNum(num, size);
+//	int oddNum = countOddNumber(num, size);
+//	cout << "Number of odd number is " << oddNum << endl;
+//	return 0;
+//}
+//=====================================
+
+
+//#include <iostream>
+//using namespace std;
+//
+//class record
+//{
+//protected:
+//	double a, b, c;
+//	double sum = 0;
+//	double avg = 0;
+//public:
+//	record(double i = 0, double j = 0, double z = 0);
+//	double Sum();
+//	double Avg();
+//};
+//
+//record::record(double i, double j, double z)
+//{
+//	a = i;
+//	b = j;
+//	c = z;
+//}
+//
+//double record::Sum()
+//{
+//	for (int i = 0; i < 3; i++)
+//	{
+//		sum = a + b + c;
+//	}
+//	return sum;
+//}
+//
+//double record::Avg()
+//{
+//	for (int i = 0; i < 3; i++)
+//	{
+//		sum = a + b + c;
+//	}
+//	avg = sum / 3;
+//	return avg;
+//}
+//
+//int main()
+//{
+//	record student[2] = {
+//		{65.0, 70.0, 55.0 }, { 75.0, 85.0, 79.0 },
+//	};
+//
+//	cout << " 1. " << " total: " << student[0].Sum() << ", avg: " << student[0].Avg() << endl;
+//	cout << " 2. " << " total: " << student[1].Sum() << ", avg: " << student[1].Avg() << endl;
+//	return 0;
+//}
+//============================================================
+//#include <iostream>
+//using namespace std;
+//
+//class Square {
+//	int w, h;
+//public:
+//	Square() { w = h = 1; }
+//	Square(int w, int h) { this->w = w; this->h = h; }
+//	int getArea() { return w * h; };
+//};
+//
+//class Cube:public Square
+//{
+//protected:
+//	int a;
+//	int wide = 0;
+//public:
+//	Cube() { a = 1; }
+//	Cube(int w, int h, int a) :Square(w, h) { this->a = a; }
+//	int getVolume() { wide = getArea() * a; return wide; }
+//};
+//
+//int main()
+//{
+//	Cube box(5, 5, 5);
+//	cout << box.getVolume() << endl;
+
+
